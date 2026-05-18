@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send me message</title>
+    <link rel="icon" type="image/x-icon" href="https://images.icon-icons.com/81/PNG/256/arrow_top_15603.png" />
+    <style>
+
+        body {
+            background-image: url('white-paper-texture.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        #name, #email, #message {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #080101;
+            border-radius: 4px;
+            display: inline-block;
+            background-color: #e4d8d8;
+        }
+
+        h1 {
+            color: #080101;
+            text-align: center;
+            font-family: 'Georgia', serif;
+            margin-top: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h1:hover {
+            color: #523277;
+            transition: 0.3s;
+        }
+
+        #submit-btn {
+            background-color: #411e79;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #submit-btn:hover {
+            background-color: #a50e0e;
+            transition: 0.3s;
+        }
+
+        #returnback {
+            text-align: center;
+            margin-top: 20px;
+            font-size:30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Send me message</h1>
+    <form action="https://formsubmit.co/nonopepep7@gmail.com" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="_replyto" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        <button id="submit-btn" type="submit">Send</button>
+    </form>
+
+    <div id="returnback">
+        <a href="index.html">Return back to home</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web collection</title>
+    <link rel="icon" type="image/x-icon" href="https://images.icon-icons.com/81/PNG/256/arrow_top_15603.png" />
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.72);
+            color: #d4d4d4;
+            text-align: center;
+            padding: 12px 0;
+            border-top: 1px solid rgba(125, 211, 252, 0.35);
+            box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.25);
+        }
+
+        body {
+            font-family: 'poppins', sans-serif;
+            letter-spacing: 0.05px;
+            background-image: url('tan.png');
+            /* Ensure this file is in your folder */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 30px;
+            color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: rgb(221, 68, 68);
+            text-align: right;
+            font-size: 4rem;
+            text-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            animation-name: myani;
+            animation-duration: 5s;
+
+
+        }
+
+        @keyframes myani {
+            0% {
+                transform: translateY(-40px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h1:hover {
+            color: #ff4f4f;
+            cursor: pointer;
+            text-transform: capitalize;
+            font-size: 4.05rem;
+
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #e8e8e8;
+            text-align: center;
+            max-width: 720px;
+            margin: 12px auto 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            animation: fadeIn 1s ease-in-out;
+
+        }
+
+        p:hover {
+            color: #a8ff00;
+            cursor: pointer;
+        }
+
+        h2 {
+            color: #ffffff;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #7dd3fc;
+        }
+
+        a:hover {
+            color: #38bdf8;
+        }
+
+        .projects {
+            background-color: rgba(0, 0, 0, 0.72);
+            padding: 24px;
+            border-radius: 18px;
+            max-width: 800px;
+            border: 1px solid rgba(125, 211, 252, 0.35);
+            box-shadow: 0 18px 50px rgba(0, 0, 0, 0.25);
+            margin-right: auto;
+        }
+
+        .youtube-logo {
+            filter: drop-shadow(0 4px 8px rgba(255, 0, 0, 0.5));
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .youtube-logo:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(0 6px 12px rgba(255, 0, 0, 0.7));
+            
+        }
+
+
+
+        .music-player {
+            position: fixed;
+            right: 24px;
+            bottom: 80px;
+            /* Adjusted so it doesn't overlap the footer */
+            width: 320px;
+            background: rgba(0, 0, 0, 0.94);
+            padding: 24px;
+            border-radius: 24px;
+            border: 1px solid rgba(0, 86, 179, 0.16);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(16px);
+            z-index: 999;
+        }
+
+        .music-player h2 {
+            color: #e4c1c1;
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+        }
+
+        .song-title {
+            margin-bottom: 18px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #3770be;
+        }
+
+        .controls {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+
+
+        button {
+            background: #0b69ff;
+            color: #fff;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 999px;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: transform 0.2s ease, background 0.2s ease;
+            box-shadow: 0 12px 22px rgba(11, 105, 255, 0.2);
+        }
+
+        .information {
+            position: fixed;
+            top: 24px;
+            right: 24px;
+            background-color: rgba(0, 0, 0, 0.72);
+            padding: 12px 18px;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 999px;
+            border-style: dotted;
+            color: #bf17f1;
+
+        }
+
+        .information:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: #f4f4f4;
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.5);
+        }
+
+        button:hover {
+            transform: translateY(-1px);
+            background: #004bb5;
+        }
+
+        .pause-btn {
+            background: #4b5563;
+        }
+
+        .pause-btn:hover {
+            background: #1f2937;
+        }
+
+        audio {
+            display: none;
+        }
+
+        nav {
+            position: fixed;
+            top: 24px;
+            left: 24px;
+            z-index: 1000;
+            background-color: rgb(2, 2, 49);
+            padding: 12px 18px;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 999px;
+            border-style: dotted;
+            animation-name: bestanimationforabout;
+            animation-duration: 2s;
+
+        }
+
+        @keyframes bestanimationforabout {
+            0% {
+                transform: translateX(-40px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        nav :hover {
+
+            color: #f4f4f4;
+            font-size: 15px;
+            cursor: pointer;
+
+
+        }
+
+        .youtube {
+            position: fixed;
+            bottom: 300px;
+            right: 0px;
+            animation-name: clickonyoutubelogo;
+            animation-duration: 5s;
+
+        }
+
+        @keyframes clickonyoutubelogo {
+            0% {
+                transform: translateX(150px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+
+        }
+    </style>
+
+    <script>
+        function playAudio() {
+            var x = document.getElementById("myAudio");
+            x.play();
+        }
+
+        function pauseAudio() {
+            var x = document.getElementById("myAudio");
+            x.pause();
+        }
+
+        if (!localStorage.getItem('p')) {
+            window.alert(" Bro try playing the music player, you will love it! 😂😂");
+            localStorage.setItem('p', '1');
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="about.html">About</a>
+
+
+        </nav>
+
+        <div class="information">
+            <h2>Created by Nirdesh </h2>
+            <h2>Visit his github <a href="https://github.com/nonopepep7-maker" target="_blank">here</a></h2>
+
+        </div>
+
+
+
+
+
+    </header>
+    <div class="container">
+        <h1>Web collection</h1>
+        <p>This is a collection of web resources.</p>
+        <p>Click on the links below to explore the projects.</p>
+    </div>
+
+
+
+    <div class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="wallapaper.html" target="_blank">Wallpaper downloader</a></li>
+            <li><a href="Topweb.html" target="_blank">Top websites</a></li>
+            <li><a href="Social.html" target="_blank">Social Media</a></li>
+            <li><a href="Form.html" target="_blank">Form</a></li>
+            <li><a href="todolist.html" target="_blank">To-Do List</a></li>
+            <li><a href="time.html" target="_blank">World Time</a></li>
+        </ul>
+    </div>
+
+    <div class="music-player">
+        <h2>Songs</h2>
+        <p class="song-title">Believer - Imagine Dragons</p>
+
+        <audio id="myAudio">
+            <source src="belive.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <div class="controls">
+            <button onclick="playAudio()">▶ Play</button>
+            <button onclick="pauseAudio()" class="pause-btn">⏸ Pause</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Web collection. All rights reserved. </p>
+    </div>
+
+    <a class="youtube" href="https://youtu.be/eJ0lgY1rVX8" target="_blank">
+        <img class="youtube-logo" src="youtube.png" alt="YouTube Link" width="200px" height="200px">
+    </a>
+
+</body>
+
+</html>

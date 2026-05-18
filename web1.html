@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Web - Link Collection</title>
+    <link rel="icon" href="https://images.icon-icons.com/81/PNG/256/arrow_top_15603.png">
+    <link rel="stylesheet" href="web1.css">
+    <script>
+        window.onload = function () {
+            // Select all link grids to shuffle them independently
+            const grids = document.querySelectorAll('.link-grid');
+            
+            grids.forEach(grid => {
+                const cards = Array.from(grid.children);
+
+                for (let i = cards.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [cards[i], cards[j]] = [cards[j], cards[i]];
+                }
+
+                grid.innerHTML = '';
+                cards.forEach(card => grid.appendChild(card));
+            });
+        };
+
+        if (!localStorage.getItem('p')) {
+            window.alert(" Try refreshing the page if you don't see any changes! ");
+            localStorage.setItem('p', '1');
+        }
+    </script>
+    <style>
+        :root {
+            --primary-bg: rgba(78, 64, 212, 0.9);
+            --text-light: #f4f4f4;
+            --accent: #cfb834;
+            --primary-color: #4e40d4;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            margin: 0;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 250px;
+            background-color: var(--primary-bg);
+            padding: 20px;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            flex-shrink: 0;
+        }
+
+        .web {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .menu-item {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            margin: 5px 0;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .menu-item:hover,
+        .menu-item.active {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Main Content Styling */
+        .content {
+            flex-grow: 1;
+            padding: 40px;
+            background-color: #242424;
+        }
+
+        /* The Link Grid */
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 0px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+
+        .link-card {
+            background: #333;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #444;
+            transition: transform 0.2s, border-color 0.2s;
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        .link-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            background: #3d3d3d;
+        }
+
+        .link-card h3 {
+            margin: 0 0 10px 0;
+            color: var(--accent);
+        }
+
+        .link-card p {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin: 0;
+        }
+
+        header {
+            margin-bottom: 30px;
+        }
+
+       
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="web">Top Web</div>
+            <nav class="Menu">
+                <a href="#popular" class="menu-item active">🔥 Popular</a>
+                <a href="#Recent" class="menu-item">🕒 Recent</a>
+            </nav>
+        </aside>
+        
+
+        <!-- Main Content -->
+        <main class="content">
+            <section id="popular">
+                <h2>🔥 Popular Now</h2>
+                <div class="link-grid">
+                    <a href="https://google.com" target="_blank" class="link-card">
+                        <h3>Google</h3>
+                        <p>The world's most popular search engine.</p>
+                        <img src="https://www.google.com/favicon.ico" alt="Google Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://github.com" target="_blank" class="link-card">
+                        <h3>GitHub</h3>
+                        <p>Where the world builds software.</p>
+                        <img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://dribbble.com" target="_blank" class="link-card">
+                        <h3>Dribbble</h3>
+                        <p>Design inspiration and feedback.</p>
+                    </a>
+
+                    <a href="https://stackoverflow.com" target="_blank" class="link-card">
+                        <h3>Stack Overflow</h3>
+                        <p>Where developers learn and share knowledge.</p>
+                        <img src="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico" alt="Stack Overflow Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://twitter.com" target="_blank" class="link-card">
+                        <h3>Twitter</h3>
+                        <p>What's happening in the world right now.</p>
+                        <img src="https://abs.twimg.com/favicons/twitter.ico" alt="Twitter Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://linkedin.com" target="_blank" class="link-card">
+                        <h3>LinkedIn</h3>
+                        <p>Connect with professionals worldwide.</p>
+                        <img src="https://static.licdn.com/aero-v1/sc/h/al2o9zrvru7aqj8e1x2rzsrca" alt="LinkedIn Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://youtube.com" target="_blank" class="link-card">
+                        <h3>YouTube</h3>
+                        <p>Watch and share videos with the world.</p>
+                        <img src="https://www.youtube.com/s/desktop/47009d78/img/favicon_32x32.png" alt="YouTube Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://facebook.com" target="_blank" class="link-card">
+                        <h3>Facebook</h3>
+                        <p>Connect with friends and the world around you.</p>
+                        <img src="https://www.facebook.com/favicon.ico" alt="Facebook Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://instagram.com" target="_blank" class="link-card">
+                        <h3>Instagram</h3>
+                        <p>Share your photos and videos with friends.</p>
+                        <img src="https://static.cdninstagram.com/rsrc.php/yr/r/rzWiSjZRxk5.webp" alt="Instagram Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://reddit.com" target="_blank" class="link-card">
+                        <h3>Reddit</h3>
+                        <p>The front page of the internet.</p>
+                        <img src="https://www.reddit.com/favicon.ico" alt="Reddit Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://netflix.com" target="_blank" class="link-card">
+                        <h3>Netflix</h3>
+                        <p>Watch TV shows and movies online.</p>
+                        <img src="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" alt="Netflix Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://spotify.com" target="_blank" class="link-card">
+                        <h3>Spotify</h3>
+                        <p>Listen to music and podcasts.</p>
+                        <img src="https://www.scdn.co/i/_global/favicon.png" alt="Spotify Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://amazon.com" target="_blank" class="link-card">
+                        <h3>Amazon</h3>
+                        <p>Shop online for electronics, apparel, and more.</p>
+                        <img src="https://www.amazon.com/favicon.ico" alt="Amazon Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://flavortown.hackclub.com/" target="_blank" class="link-card">
+                        <h3>Flavortown</h3>
+                        <p>Explore the world of food and recipes.</p>
+                        <img src="https://flavortown.hackclub.com/assets/favicon-5ea28202.ico" alt="Flavortown Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://news.ycombinator.com" target="_blank" class="link-card">
+                        <h3>Hacker News</h3>
+                        <p>Technology and startup news.</p>
+                        <img src="https://news.ycombinator.com/favicon.ico" alt="Hacker News Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://medium.com" target="_blank" class="link-card">
+                        <h3>Medium</h3>
+                        <p>Read and write articles on various topics.</p>
+                    </a>
+
+                    <a href="https://twitch.tv" target="_blank" class="link-card">
+                        <h3>Twitch</h3>
+                        <p>Watch and stream live gaming content.</p>
+                        <img src="https://static.twitchcdn.net/assets/favicon-32-e29e246c157142c94346.png" alt="Twitch Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://discord.com" target="_blank" class="link-card">
+                        <h3>Discord</h3>
+                        <p>Chat and connect with communities.</p>
+                    </a>
+
+                    <a href="https://slack.com" target="_blank" class="link-card">
+                        <h3>Slack</h3>
+                        <p>Team communication and collaboration.</p>
+                        <img src="https://slack.com/favicon.ico" alt="Slack Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://notion.so" target="_blank" class="link-card">
+                        <h3>Notion</h3>
+                        <p>All-in-one workspace for notes and projects.</p>
+                        <img src="https://www.notion.so/images/favicon.ico" alt="Notion Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://airtable.com" target="_blank" class="link-card">
+                        <h3>Airtable</h3>
+                        <p>Organize work and collaborate on projects.</p>
+                        <img src="https://airtable.com/favicon.ico" alt="Airtable Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://canva.com" target="_blank" class="link-card">
+                        <h3>Canva</h3>
+                        <p>Design graphics and presentations easily.</p>
+                        <img src="https://www.canva.com/favicon.ico" alt="Canva Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://codepen.io" target="_blank" class="link-card">
+                        <h3>CodePen</h3>
+                        <p>Showcase and discover front-end code.</p>
+                    </a>
+
+                    <a href="https://www.nasa.gov" target="_blank" class="link-card">
+                        <h3>NASA</h3>
+                        <p>Explore space and science discoveries.</p>
+                    </a>
+
+                    <a href="https://www.bbc.com" target="_blank" class="link-card">
+                        <h3>BBC News</h3>
+                        <p>Global news and current affairs.</p>
+                        <img src="https://www.bbc.com/favicon.ico" alt="BBC Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://www.nytimes.com" target="_blank" class="link-card">
+                        <h3>New York Times</h3>
+                        <p>News and analysis from The New York Times.</p>
+                        <img src="https://www.nytimes.com/favicon.ico" alt="NYT Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://www.cnn.com" target="_blank" class="link-card">
+                        <h3>CNN</h3>
+                        <p>Breaking news and top stories.</p>
+                        <img src="https://www.cnn.com/favicon.ico" alt="CNN Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://www.espn.com" target="_blank" class="link-card">
+                        <h3>ESPN</h3>
+                        <p>Sports news, scores, and highlights.</p>
+                        <img src="https://www.espn.com/favicon.ico" alt="ESPN Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://www.weather.com" target="_blank" class="link-card">
+                        <h3>Weather.com</h3>
+                        <p>Local and national weather forecasts.</p>
+                        <img src="https://www.weather.com/favicon.ico" alt="Weather Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://www.imdb.com" target="_blank" class="link-card">
+                        <h3>IMDb</h3>
+                        <p>Movie and TV information and ratings.</p>
+                        <img src="https://www.imdb.com/favicon.ico" alt="IMDb Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://microsoft.com" target="_blank" class="link-card">
+                        <h3>Microsoft</h3>
+                        <p>Technology company known for Windows.</p>
+                        <img src="https://www.microsoft.com/favicon.ico" alt="Microsoft Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://apple.com" target="_blank" class="link-card">
+                        <h3>Apple</h3>
+                        <p>Technology company known for iPhone.</p>
+                        <img src="https://www.apple.com/favicon.ico" alt="Apple Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://samsung.com" target="_blank" class="link-card">
+                        <h3>Samsung</h3>
+                        <p>Global technology company known for electronics.</p>
+                    </a>
+
+                    <a href="https://www.tesla.com" target="_blank" class="link-card">
+                        <h3>Tesla</h3>
+                        <p>Electric vehicles and clean energy company.</p>
+                        <img src="https://www.tesla.com/favicon.ico" alt="Tesla Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://www.nintendo.com" target="_blank" class="link-card">
+                        <h3>Nintendo</h3>
+                        <p>Video game company known for Mario.</p>
+                        <img src="https://www.nintendo.com/favicon.ico" alt="Nintendo Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://www.adobe.com" target="_blank" class="link-card">
+                        <h3>Adobe</h3>
+                        <p>Software known for Photoshop and Acrobat.</p>
+                        <img src="https://www.adobe.com/favicon.ico" alt="Adobe Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+
+                    <a href="https://chatgpt.com" target="_blank" class="link-card">
+                        <h3>ChatGPT</h3>
+                        <p>AI language model by OpenAI.</p>
+                        <img src="https://chatgpt.com/favicon.ico" alt="ChatGPT Icon" style="width: 16px; height: 16px; margin-top: 10px;">
+                    </a>
+                </div>
+            </section>
+
+            <section id="Recent">
+                <h2>🕒 Recent Now</h2>
+                <div class="link-grid">
+                    <a href="https://www.midjourney.com" target="_blank" class="link-card">
+                        <h3>MidJourney</h3>
+                        <p>AI-powered image generation platform.</p>
+                        
+                    </a>
+                    <a href="https://www.stablediffusion.com" target="_blank" class="link-card">
+                        <h3>Stable Diffusion</h3>
+                        <p>Open-source AI image generation model.</p>
+                    </a>
+                    <a href="https://www.dall-e.com" target="_blank" class="link-card">
+                        <h3>DALL·E</h3>
+                        <p>AI model that generates images from text.</p>
+                    </a>
+                    <a href="https://www.runwayml.com" target="_blank" class="link-card">
+                        <h3>Runway ML</h3>
+                        <p>Creative toolkit for AI-powered content creation.</p>
+                    </a>
+                    <a href="https://www.descript.com" target="_blank" class="link-card">
+                        <h3>Descript</h3>
+                        <p>Audio and video editing software with AI features.</p>
+                    </a>
+                    <a href="https://www.kaiber.ai" target="_blank" class="link-card">
+                        <h3>Kaiber AI</h3>
+                        <p>AI-powered video creation platform.</p>
+                    </a>
+                    <a href="https://www.synthesia.io" target="_blank" class="link-card">
+                        <h3>Synthesia</h3>
+                        <p>AI video generation platform for creating videos from text.</p>
+                    </a>
+                    <a href="https://www.lumen5.com" target="_blank" class="link-card">
+                        <h3>Lumen5</h3>
+                        <p>AI video creation platform for transforming text into engaging videos.</p>
+                    </a>
+                    <a href="https://www.pictory.ai" target="_blank" class="link-card">
+                        <h3>Pictory AI</h3>
+                        <p>AI-powered video editing and creation platform.</p>
+                    </a>
+                    <a href="https://www.invideo.io" target="_blank" class="link-card">
+                        <h3>InVideo</h3>
+                        <p>Online video editor with AI features for creating professional videos.</p>
+                    </a>
+                    
+                </div>
+            </section>
+            
+        </main>
+    </div>
+
+</body>
+
+</html>

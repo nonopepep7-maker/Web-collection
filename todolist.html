@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO do list</title>
+    <link rel="icon" type="image/x-icon" href="https://images.icon-icons.com/81/PNG/256/arrow_top_15603.png" />
+</head>
+
+    
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('todo-form');
+    const input = form.querySelector('input[type="text"]');
+    const todoContainer = document.querySelector('.todo-container');
+
+    // 1. LOAD: When page opens, get tasks from storage and display them
+    const savedTasks = JSON.parse(localStorage.getItem('myTasks')) || [];
+        savedTasks.forEach(taskText => addTask(taskText, false));
+
+        form.addEventListener('submit', (e) => {
+        e.preventDefault();
+    const taskText = input.value.trim();
+    if (taskText) {
+        addTask(taskText, true); // true means "save this to storage"
+    input.value = '';
+            }
+        });
+
+    function addTask(text, shouldSave) {
+            const taskItem = document.createElement('div');
+    taskItem.classList.add('task-item');
+
+    // Create a span for the text so it's separate from the button
+    const textSpan = document.createElement('span');
+    textSpan.textContent = text;
+    taskItem.appendChild(textSpan);
+
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+            deleteButton.addEventListener('click', () => {
+        todoContainer.removeChild(taskItem);
+    saveAllTasks(); // Update storage after deleting
+            });
+
+    taskItem.appendChild(deleteButton);
+    todoContainer.appendChild(taskItem);
+
+    // Save to storage if this is a brand new task
+    if (shouldSave) {
+        saveAllTasks();
+            }
+        }
+
+    // 2. SAVE: Function to grab all current tasks and put them in localStorage
+    function saveAllTasks() {
+            const tasks = [];
+            // Select all span tags inside task items to get just the task text
+            document.querySelectorAll('.task-item span').forEach(span => {
+        tasks.push(span.textContent);
+            });
+    localStorage.setItem('myTasks', JSON.stringify(tasks));
+        }
+    });
+</script>
+</script>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-image: url('https://4kwallpapers.com/images/walls/thumbs_2t/25837.png');
+        background-size: cover;
+        min-height: 100vh;
+        margin: 0;
+        padding: 30px;
+        color: #f4f4f4;
+    }
+
+    
+
+    .todo-container {
+        margin-top: 20px;
+
+    }
+
+    .task-item {
+        background-color: rgba(0, 0, 0, 0.72);
+        color: #d4d4d4;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .task-item button {
+        background-color: #ff4d4d;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    h1 {
+        color: #701d1d;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        animation-name: honey;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        display: inline-block;
+        font-size: 50px;
+    }
+
+    @keyframes honey {
+        0% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        50% {
+            transform: translateY(-25px);
+            opacity: 0.8;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    #weare {
+        background-color: #6152b4;
+        color: #000;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #weare:hover {
+        background-color: #c51b1b;
+        color: #000;
+    }
+
+    #humans {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #000000;
+        width: 200px;
+        background-color: #d4cfec;
+    }
+
+    #humans:focus {
+        outline: none;
+        border-color: #6152b4;
+        box-shadow: 0 0 5px rgba(97, 82, 180, 0.5);
+    }
+
+    #hint-link {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        animation-name: bounce;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    #hint-link img {
+        width: 60px;
+        height: 60px;
+        transition: transform 0.3s ease;
+    }
+
+    #hint-link img:hover {
+        transform: scale(1.2);
+    }
+
+</style>
+
+
+<body>
+    <h1>To-Do List</h1>
+    <div class="todo-container">
+        <form id="todo-form">
+            <input id="humans" type="text" placeholder="Enter a new task" required><br>
+            <button id="weare" type="submit">Add Task</button>
+        </form>
+    </div>
+
+    <a id="hint-link" href="hint.html">
+        <img src="hint.png" alt="Hint Link" style="height: 105px; width: 105px;">
+    </a>
+
+</body>
+
+</html>
