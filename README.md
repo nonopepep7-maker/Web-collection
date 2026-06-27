@@ -84,7 +84,7 @@ MIT License
 *   **Multi-Level Bio:** A layered interactive profile section outlining personal background information, tech goals, and communication links.
 *   **Modular Footer:** A clean footer architecture housing project credits, metadata, and social hooks.
 
-  ### 📊 My Live GitHub Insights
+### 📊 My Live GitHub Insights
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=nonopepep7-maker&show_icons=true&theme=tokyonight" alt="Stats Card" width="400" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=nonopepep7-maker&theme=tokyonight" alt="Streak Card" width="400" />
