@@ -93,7 +93,7 @@ MIT License
 ---
 
 <p align="center">
-  <i>"Coding is exactly like cooking. You need the right ingredients, a ton of patience, and lots of testing to make something amazing."</i> 🍳✨
+  <i>""Any fool can write code that a computer can understand. Good programmers write code that humans can understand."— Martin Fowler, Refactoring"</i> 🍳✨
 </p>
 
 
