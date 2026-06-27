@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazyy!!</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://imgs.search.brave.com/oOBywZQtvrRPSmxIZiJKK4f4R2o_2lk_RWFF-0W6PfY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/Ym5haWwuaW1nYmlu/LmNvbS8xMS80Lzgv/ZW1vamktY3Jhenkt/Y2FydG9vbi1mYWNl/LWV4cHJlc3Npb24t/M0RReUxnNzdfdC5q/cGc" />
+    <link rel="stylesheet" href="superonly.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script src="superonly.js" defer></script>
+
+    <script>
+        if (!localStorage.getItem('p')) {
+            window.alert("Welcome to the matrix. Wake up, Neo... ");
+            localStorage.setItem('p', '1');
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const follower = document.querySelector('.cursor-follower');
+
+            window.addEventListener('mousemove', (e) => {
+                follower.style.left = `${e.clientX}px`;
+                follower.style.top = `${e.clientY}px`;
+            });
+        });
+    </script>
+
+    <style>
+        body {
+            background-image: url(https://4kwallpapers.com/images/walls/thumbs_3t/26454.jpg);
+            background-size: cover;
+            background-position: center;
+            cursor: none;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .cursor-follower {
+            width: 100px;
+            height: 100px;
+            background-image: url(https://cdn.custom-cursor.com/packs/13228/among-us-orange-citrine-character-pack.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: fixed;
+            pointer-events: none;
+            transform: translate(-50%, -50%) rotate(10deg);
+            transition: transform 0.05s ease-out;
+            z-index: 9999;
+        }
+
+        .container h1,
+        .container p {
+            user-select: none;
+            font-family: 'Indie Flower', cursive;
+            animation-duration: 5s;
+            animation-name: floating;
+            animation-iteration-count: 2;
+        }
+
+        .gtranslate_wrapper {
+            z-index: 999;
+            position: relative;
+        }
+
+        @keyframes floating {
+            0%,
+            100% {
+                transform: translateY(-80px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(0px) rotate(3deg);
+            }
+            75% {
+                transform: translateY(0px) rotate(-3deg);
+            }
+        }
+
+        .chat-messages::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .chat-messages::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .chat-messages::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col justify-between items-center p-4">
+
+    <div class="container mt-8 w-full max-w-2xl">
+        <h1 class="text-4xl md:text-6xl font-black tracking-tight text-center text-white drop-shadow-lg mb-6">
+            Super only</h1>
+        <p
+            class="mb-4 text-2xl text-center bg-blue-600/90 text-white px-4 py-2 rounded-lg outline outline-2 outline-blue-300 outline-offset-4 shadow-xl backdrop-blur-sm">
+            I dont know what to do with this page but i will try to make it really something Crazy</p>
+    </div>
+
+    <div class="chat-section-public w-full max-w-md bg-slate-900/80 border border-slate-700/50 rounded-2xl shadow-2xl backdrop-blur-md flex flex-col overflow-hidden mb-12 z-10 h-[45vh]">
+        <div class="bg-slate-950/60 px-4 py-3 border-b border-slate-700/50 flex justify-between items-center">
+            <h2 class="text-lg font-bold text-white tracking-wide flex items-center gap-2">
+                <span class="inline-block w-2 h-2 rounded-full bg-amber-400 animate-pulse" id="status-dot"></span>
+                Chat Section
+            </h2>
+            <span id="chat-status" class="text-xs text-amber-400 font-mono">Connecting...</span>
+        </div>
+
+        <div id="chat-messages" class="chat-messages flex-1 p-4 overflow-y-auto flex flex-col gap-3">
+        </div>
+
+        <div class="p-3 bg-slate-950/60 border-t border-slate-700/50 flex gap-2">
+            <input type="text" id="message-input"
+                class="flex-1 bg-slate-800 text-slate-100 placeholder-slate-500 rounded-xl px-4 py-2 text-sm border border-slate-700 outline-none focus:border-blue-500 transition-colors"
+                placeholder="Type your message here..." disabled>
+            <button id="send-btn"
+                class="bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm px-4 py-2 rounded-xl disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                disabled>Send</button>
+        </div>
+    </div>
+
+    <div class="cursor-follower"></div>
+
+    <footer>
+        <div class="footer-content">
+        </div>
+    </footer>
+
+    <div class="gtranslate_wrapper"></div>
+
+    <script>
+        window.gtranslateSettings = {
+            "default_language": "0",
+            "languages": ["es", "fr", "de", "it", "ne", "en"],
+            "wrapper_selector": ".gtranslate_wrapper",
+            "flag_style": "2d"
+        }
+    </script>
+
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
+</body>
+
+</html>
