@@ -48,10 +48,9 @@ Built as a submission for **Hack Club Macondo**. Developed entirely on a low-spe
 
 ---
 
-### 🚀 About Me & The Vibe
+### 🚀 About Me 
 * **Who:** Nirdesh Acharya, a 15-year-old builder from 🇳🇵 Nepal.
-* **The Spark:** Huge shoutout to **Macondo Hack Club** for pushing me to stop overthinking and just start shipping real projects.
-* **The Project:** A retro-matrix style public chatroom. Zero signups, zero logins, zero databases—just open the page and start talking instantly across the web.
+* **The Project:** A  public chatroom. Zero signups, zero logins
 
 ### 🧠 What I Actually Learned 
 * **Live WebSockets:** How to pipe data instantly between completely different browsers using a free public MQTT broker without hosting a backend server.
