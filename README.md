@@ -13,19 +13,19 @@ A hub of practical web tools and mini-apps built completely from scratch.
 
 ---
 
-### ⚡ The Motivation
-Built as a submission for **Hack Club Macondo**. Developed entirely on a low-spec **4GB RAM laptop** to push past hardware limits, beat the lag, and scale up to bigger software engineering projects.
+### ⚡ My Motivation
+Built as a submission for **Hack Club Macondo**. Developed entirely on a low-spec **4GB RAM laptop** ( 
 
 ---
 
-### 🧰 Core Features
+### 🧰 Features
 
-* 🖼️ **Wallpaper Downloader:** Browse and batch-download multiple high-res backgrounds.
-* 💬 **Messup (Chat Simulator):** A split, dual-dashboard view simulating live two-way local messaging.
-* ✅ **To-Do List:** Interactive task tracker with a built-in hint helper for the chat simulator.
-* 📩 **Contact Form:** Serverless portal using FormSubmit to route messages straight to my inbox.
-* 🌐 **Top Web Index:** Curated gallery of useful web links *(Active development)*.
-* ⏱️ **Time Tracker:** Productivity and time management module *(Active development)*.
+* 🖼️ **Wallpaper Downloader:** download  backgrounds.
+* 💬 **Messup (Chat Simulator):**  dual-dashboard ,two-way local messaging.
+* ✅ **To-Do List:** Add and Remove Tasks
+* 📩 **Contact Form:** messages straight to my inbox.
+* 🌐 **Top Web:** *(Active development)*.
+* ⏱️ **World Time:**  *(Active development)*.
 * 🎵 **Audio Player:** Integrated background music widget.
 
 ---
@@ -52,12 +52,15 @@ Built as a submission for **Hack Club Macondo**. Developed entirely on a low-spe
 * **Who:** Nirdesh Acharya, a 15-year-old builder from 🇳🇵 Nepal.
 * **The Project:** A  public chatroom. Zero signups, zero logins
 
-### 🧠 What I Actually Learned 
-* **Live WebSockets:** How to pipe data instantly between completely different browsers using a free public MQTT broker without hosting a backend server.
-* **XSS Defense:** How to sanitize raw text inputs so people can't inject rogue HTML or crash the page with malicious code.
-* **Dynamic DOM:** Using JavaScript to create and inject stylized chat bubbles on the fly while locking down auto-scroll behavior.
-* **Tailwind Blending:** Combining utility classes with transparency filters (`backdrop-blur`) to build clean components over a heavy graphic wallpaper.
+### 🧠 what i actually learned  
 
+* **Live websockets:** how to stream data in real time between totally different browsers using a free public mqtt broker 
+
+* **XSS defense:** how to properly sanitize user input so nobody can sneak in rogue html, inject scripts, or break the page with weird malicious code.  
+
+* **dynamic dom:** creating and injecting chat bubbles on the fly with javascript, styling them dynamically, and keeping auto-scroll smooth. 
+
+* **tailwind blending:** mixing utility classes with transparency effects like `backdrop-blur` to layer clean.
 ---
 
 
