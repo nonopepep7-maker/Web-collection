@@ -14,7 +14,7 @@ A collection of multiple project that I made during learning.
 ---
 
 ### ⚡ My Motivation
-Built as a submission for **Hack Club Macondo**. Developed entirely on a low-spec **4GB RAM laptop** ( 
+Built as a submission for **Hack Club Macondo**. Developed entirely on a low-spec **4GB RAM laptop** 
 
 ---
 
