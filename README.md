@@ -1,6 +1,6 @@
 # 🌐 Web Collection
 
-A hub of practical web tools and mini-apps built completely from scratch.
+A collection of multiple project that I made during learning.
 
 🔗 **[Live Demo](https://nonopepep7-maker.github.io/Web-collection/)**
 
