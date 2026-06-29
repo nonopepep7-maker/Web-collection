@@ -1,4 +1,4 @@
-# 🌐 Web Collection
+#  Web Collection
 
 A collection of multiple project that I made during learning.
 
@@ -13,20 +13,20 @@ A collection of multiple project that I made during learning.
 
 ---
 
-### ⚡ My Motivation
+###  My Motivation
 Built as a submission for **Hack Club Macondo**. Developed entirely on a low-spec **4GB RAM laptop** 
 
 ---
 
-### 🧰 Features
+###  Features
 
-* 🖼️ **Wallpaper Downloader:** download  backgrounds.
-* 💬 **Messup (Chat Simulator):**  dual-dashboard ,two-way local messaging.
-* ✅ **To-Do List:** Add and Remove Tasks
-* 📩 **Contact Form:** messages straight to my inbox.
-* 🌐 **Top Web:** *(Active development)*.
-* ⏱️ **World Time:**  *(Active development)*.
-* 🎵 **Audio Player:** Integrated background music widget.
+*  **Wallpaper Downloader:** download  backgrounds.
+*  **Messup (Chat Simulator):**  dual-dashboard .
+*  **To-Do List:** Add and Remove Tasks
+*  **Contact Form:** messages straight to my inbox.
+*  **Top Web:** *(Active development)*.
+*  **World Time:**  *(Active development)*.
+*  **Audio Player:** Integrated background music widget.
 
 ---
 
@@ -34,7 +34,7 @@ Built as a submission for **Hack Club Macondo**. Developed entirely on a low-spe
 * **Installation:** None. Go straight to the live demo link above.
 * **Credits:** Huge motivation from **Hack Club Macondo**.
 * **License:** MIT
-# ⚡ Super Project 
+#  Super Project 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3500&pause=1000&color=00FF66&center=true&vCenter=true&width=500&lines=15-Year-Old+Dev+from+Nepal;Motivated+by+Macondo+Hack+Club;Zero-Login+Real-Time+Chat;Building+and+Breaking+Things!..." alt="Typing Animation" />
 </p>
@@ -48,19 +48,21 @@ Built as a submission for **Hack Club Macondo**. Developed entirely on a low-spe
 
 ---
 
-### 🚀 About Me 
+### About Me 
 * **Who:** Nirdesh Acharya, a 15-year-old builder from 🇳🇵 Nepal.
 * **The Project:** A  public chatroom. Zero signups, zero logins
 
-### 🧠 what i actually learned  
+###  what i actually build?
 
-* **Live websockets:** how to stream data in real time between totally different browsers using a free public mqtt broker 
+I build multiple things in it. They are listed below:
 
-* **XSS defense:** how to properly sanitize user input so nobody can sneak in rogue html, inject scripts, or break the page with weird malicious code.  
+1.using some keyframes and make animation
+2.I used google api and builded language option
+3.A anon server connection
+4.Proper place to chat
 
-* **dynamic dom:** creating and injecting chat bubbles on the fly with javascript, styling them dynamically, and keeping auto-scroll smooth. 
 
-* **tailwind blending:** mixing utility classes with transparency effects like `backdrop-blur` to layer clean.
+
 ---
 
 
@@ -74,7 +76,7 @@ Built as a submission for **Hack Club Macondo**. Developed entirely on a low-spe
 
 <p align="center">
   <i>""Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
-     — Martin Fowler"</i> 🍳✨
+     — Martin Fowler"</i> 
 </p>
 
 
