@@ -56,12 +56,12 @@ Built as a submission for **Hack Club Macondo**. Developed entirely on a low-spe
 
 I build multiple things in it. They are listed below:
 
-1.using some keyframes and make animation
-2.I used google api and builded language option
-3.A anon server connection
-4.Proper place to chat
-
-
+*  **animation and keyframes:** 
+*  **language swicher made using api:** 
+*  **dual chat section:** 
+*  **Anonmous connection to server:** 
+*  **Random username given** 
+*  **no sign up and login:**  
 
 ---
 
