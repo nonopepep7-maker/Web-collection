@@ -1,4 +1,4 @@
-# Web Collection
+# `NIRDESH@WEB-COLLECTION`
 
 A collection of multiple projects that I made during learning.
 
