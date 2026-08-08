@@ -8,7 +8,7 @@ A collection of multiple project that I made during learning.
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/FormSubmit-Serverless-blueviolet?style=flat-square" />
+  <img src="https://img.shields.io/badge/FormSubmit-blueviolet?style=flat-square" />
 </p>
 
 ---
@@ -68,16 +68,13 @@ I build multiple things in it. They are listed below:
 
 ### 📊 My Live GitHub Insights
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nonopepep7-maker&show_icons=true&theme=tokyonight" alt="Stats Card" width="400" />
+ 
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=nonopepep7-maker&theme=tokyonight" alt="Streak Card" width="400" />
 </p>
 
 ---
 
-<p align="center">
-  <i>""Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
-     — Martin Fowler"</i> 
-</p>
+
 
 
 
