@@ -1,6 +1,7 @@
 # `NIRDESH@WEB-COLLECTION`
 
-A collection of multiple projects that I made during learning.
+A simple website with a few useful tools like wallpapers, chat, to-do, world time, and music. More stuff is being added.
+
 
 🔗 **[Live Demo](https://nonopepep7-maker.github.io/Web-collection/)**
 
