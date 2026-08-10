@@ -112,6 +112,8 @@ web-collection/
     │   ├── tanj.png
     │   ├── whats.png
     │   ├── white-paper-texture.jpg
+    │   ├──brave_b1CB4dqTrP.png
+    │   ├──brave_zd9KlrsgBX.png
     │   └── youtube.png
     │
     └── audio/
