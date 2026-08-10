@@ -53,6 +53,14 @@ I built multiple things in this project:
 
 ---
 
+## Preview
+
+<p align="center">
+  <img src="brave_b1CB4dqTrP.png" width="900">
+  <img src="brave_zd9KlrsgBX.png" width="900">
+ 
+</p>
+
 ## 📁 Structure
 
 ```text
