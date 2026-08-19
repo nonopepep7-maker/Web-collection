@@ -180,20 +180,9 @@ It was developed on a **4GB RAM laptop**, with a focus on keeping the project li
 
 ---
 
-## GitHub Statistics
+## GitHub Stats
 
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=nonopepep7-maker&show_icons=true&hide_border=true&include_all_commits=true&count_private=true"
-    alt="GitHub statistics"
-    height="180"
-  />
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=nonopepep7-maker&layout=compact&hide_border=true"
-    alt="Most used languages"
-    height="180"
-  />
-</p>
+
 
 <p align="center">
   <img
