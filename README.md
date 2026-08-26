@@ -1,6 +1,8 @@
 # NIRDESH@WEB-COLLECTION
 
-A simple collection of useful web tools including wallpapers, chat, to-do, world time, and music.
+A small collection of web stuff i made.
+
+There are wallpapers, chat, to-do, world time, music and some other things in it.
 
 **Live Demo:** https://nonopepep7-maker.github.io/Web-collection/
 
@@ -8,9 +10,13 @@ A simple collection of useful web tools including wallpapers, chat, to-do, world
 
 ## About
 
-NIRDESH@WEB-COLLECTION is a small web project built to learn, experiment, and create useful browser-based tools.
+NIRDESH@WEB-COLLECTION is a web project i made while learning and trying different things.
 
-The project was created as a submission for **Hack Club Macondo** and developed on a low-spec **4GB RAM laptop**.
+I wanted to put a bunch of small useful things in one place instead of making a separate website for every little idea.
+
+This was also made for **Hack Club Macondo**.
+
+and yeah, most of it was built on my old 4GB RAM laptop.
 
 ---
 
@@ -18,87 +24,80 @@ The project was created as a submission for **Hack Club Macondo** and developed 
 
 ### Wallpaper Downloader
 
-Browse and download wallpapers.
+look through wallpapers and download them.
 
 ### Messup — Chat Simulator
 
-A dual-dashboard chat system for exchanging messages between two chat panels.
+There are two chat panels.
+
+you can send messages between them and basically use them like two different people.
 
 ### To-Do List
 
-Add and remove tasks.
+add tasks and remove them when u are done.
 
 ### Contact Form
 
-Send messages through the contact form.
+a basic form for sending a message.
 
 ### Top Web
 
-A collection of useful websites.
+A page where i keep useful websites.
 
-*Currently in development.*
+still working on this one.
 
 ### World Time
 
-View time around the world.
+shows the time in different places around the world.
 
-*Currently in development.*
+also still being worked on.
 
 ### Audio Player
 
-Built-in background music player.
+has background music built into the website.
 
 ---
 
-## What I Built
-
-The project includes:
+## Some other stuff in it
 
 * CSS animations and keyframes
-* Language switching using an API
-* Dual chat interface
-* Anonymous server connection
-* Random usernames
-* No account required
-* No login required
-* Multiple tools in one website
+* language changing using an API
+* two-sided chat
+* anonymous server connection
+* random usernames
+* no account needed
+* no login needed
+* multiple things inside one website
 
 ---
 
-## Run Locally
+## Run locally
 
-No package installation or build process is required.
+there is no npm install or build thing needed.
 
-### 1. Clone the repository
+### Clone it
 
 ```bash
 git clone https://github.com/nonopepep7-maker/Web-collection.git
 ```
 
-### 2. Open the project
+### Go inside
 
 ```bash
 cd Web-collection
 ```
 
-### 3. Start the website
+### Open it
 
-You can open `index.html` directly in your browser.
+open `index.html` in your browser.
 
-For development, using a local server is recommended.
+that's enough for the basic stuff.
 
 ### Using VS Code
 
-Install the **Live Server** extension in VS Code.
+I use Live Server for this.
 
-Then:
-
-1. Open the `Web-collection` folder.
-2. Open `index.html`.
-3. Right-click the file.
-4. Select **Open with Live Server**.
-
-The website will then open in your browser.
+Install the **Live Server** extension, open the project folder, right click `index.html` and press **Open with Live Server**.
 
 ---
 
@@ -145,78 +144,66 @@ Web-collection/
 
 ## Preview
 
-<p align="center">
-  <img
-    src="brave_b1CB4dqTrP.png"
-    width="900"
-    alt="Nirdesh Web Collection preview"
-  />
-</p>
+### Main
 
-<p align="center">
-  <img
-    src="brave_zd9KlrsgBX.png"
-    width="900"
-    alt="Nirdesh Web Collection preview"
-  />
-</p>
+<img src="brave_b1CB4dqTrP.png" width="850" alt="Nirdesh Web Collection preview">
+
+### Another view
+
+<img src="brave_zd9KlrsgBX.png" width="850" alt="Nirdesh Web Collection preview">
 
 ---
 
 ## About Me
 
 **Nirdesh Acharya**
+
 Builder from Nepal.
 
-I enjoy building projects, experimenting with web technologies, and learning by creating things from scratch.
+I like making things, trying random ideas and learning while building them.
+
+Most of the time i learn something faster when i actually make a project with it.
 
 ---
 
-## Motivation
+## Why i made it
 
-This project was built as a submission for **Hack Club Macondo**.
+This project was made for **Hack Club Macondo**.
 
-It was developed on a **4GB RAM laptop**, with a focus on keeping the project lightweight and simple.
+I was also using a **4GB RAM laptop** while making it, so i tried to keep things fairly simple and lightweight.
 
 ---
 
-## GitHub Stats
+## GitHub Streak
 
-
-
-<p align="center">
-  <img
-    src="https://streak-stats.demolab.com?user=nonopepep7-maker&hide_border=true"
-    alt="GitHub contribution streak"
-  />
-</p>
+<img src="https://streak-stats.demolab.com?user=nonopepep7-maker&hide_border=true" alt="GitHub contribution streak">
 
 ---
 
 ## Tech Used
 
-* HTML5
-* CSS3
-* JavaScript
-* APIs
-* GitHub Pages
+HTML
+CSS
+JavaScript
+APIs
+GitHub Pages
+
+nothing too complicated.
 
 ---
 
 ## Credits
 
-This project was inspired and motivated by **Hack Club Macondo**.
+Hack Club Macondo was a big reason i started working on this project.
 
 ---
 
 ## License
 
-This project is licensed under the **MIT License**.
+MIT License
 
-See the [LICENSE](LICENSE) file for more information.
+check the [LICENSE](LICENSE) file for the full thing.
 
 ---
 
-<p align="center">
-  <strong>I believe consistency is the best practice.</strong>
-</p>
+i'll keep adding stuff to it as i get new ideas.
