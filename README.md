@@ -89,25 +89,24 @@ cd Web-collection
 
 ### Open it
 
-open `index.html` in your browser.
+u can open `index.html` in your browser...then test it
 
-that's enough for the basic stuff.
+thats just  enough for the normal things u wan to try
 
 ### Using VS Code
 
 I use Live Server for this.
 
-Install the **Live Server** extension, open the project folder, right click `index.html` and press **Open with Live Server**.
+first do Install the **Live Server** extension, open the project folder, just then u should right click `index.html` and press it and open it in live .
 
 ---
 
-## Project Structure
+## Structure is here
 
 ```text
 Web-collection/
 │
 ├── index.html
-├── README.md
 ├── LICENSE
 │
 ├── pages/
